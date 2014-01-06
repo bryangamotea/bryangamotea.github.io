@@ -4,7 +4,7 @@
   <title><![CDATA[Bryan Gamotea's Personal Blog]]></title>
   <link href="http://bryangamotea.github.io/atom.xml" rel="self"/>
   <link href="http://bryangamotea.github.io/"/>
-  <updated>2014-01-06T19:19:24+08:00</updated>
+  <updated>2014-01-06T19:51:00+08:00</updated>
   <id>http://bryangamotea.github.io/</id>
   <author>
     <name><![CDATA[Bryan Gamotea]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The Struggle]]></title>
+    <link href="http://bryangamotea.github.io/blog/2014/01/06/the-struggle/"/>
+    <updated>2014-01-06T19:45:18+08:00</updated>
+    <id>http://bryangamotea.github.io/blog/2014/01/06/the-struggle</id>
+    <content type="html"><![CDATA[<p><body></p>
+
+<pre><code>&lt;h1&gt;Still Lost&lt;/h1&gt;
+&lt;p&gt;I'm still finding my way here in octopress. Don't know why my first post looks like that but I'll figure this out, eventually. Anyway, I learned new things again when I'm on the process of configuring this blog. Learning new things makes me feel good. And I hope I can fix whatever error/s I've made.&lt;/p&gt;
+</code></pre>
+
+<p></body></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[My First Post.]]></title>
