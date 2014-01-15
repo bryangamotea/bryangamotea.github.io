@@ -4,7 +4,7 @@
   <title><![CDATA[Bryan Gamotea's Personal Blog]]></title>
   <link href="http://bryangamotea.github.io/atom.xml" rel="self"/>
   <link href="http://bryangamotea.github.io/"/>
-  <updated>2014-01-12T12:59:51+08:00</updated>
+  <updated>2014-01-15T16:49:37+08:00</updated>
   <id>http://bryangamotea.github.io/</id>
   <author>
     <name><![CDATA[Bryan Gamotea]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Python]]></title>
+    <link href="http://bryangamotea.github.io/blog/2014/01/15/python/"/>
+    <updated>2014-01-15T16:34:51+08:00</updated>
+    <id>http://bryangamotea.github.io/blog/2014/01/15/python</id>
+    <content type="html"><![CDATA[<body>
+	<h3>Indention is important&#8230;</h3>
+	<p>Python is a very unique programming language compared to other languages that I know. Most of the languages I know rarely cares about the indention you made in your code. Yes, proper indention and spacing is a good practice when you&#8217;re a programmer but in Python, indention and spaces are parts of the code itself. &#8220;Wrong indention/spacing == wrong code&#8221; that&#8217;s the Python rule.</p>
+</body>]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Compass]]></title>
