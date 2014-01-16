@@ -120,26 +120,26 @@
 </span><span class='line'>		}
 </span><span class='line'>
 </span><span class='line'>	}</span></code></pre></td></tr></table></div></figure>
-	
-	<p>and this is how you do it in regular css.</p>
-	<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+
+<p>and this is how you do it in regular css.</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>.container .content{
-</span><span class='line'>		height:200px;
-</span><span class='line'>		width:200px;
-</span><span class='line'>		background-color:black;
-</span><span class='line'>	}</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>	height:200px;
+</span><span class='line'>	width:200px;
+</span><span class='line'>	background-color:black;
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
 
 	<p>What I like about nesting is you can see that this particular element is a descendant of this element. Looking at the example, you can edit the properties of .container and .content at the same time because they are at the same block of codes unlike in regular CSS.</p>
 
 	<h4>Variables</h4>
-	<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>$margin: 0 auto;
-</span><span class='line'>	$paragraphColor: #ff0000;</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>$paragraphColor: #ff0000;</span></code></pre></td></tr></table></div></figure>
 
 	<p>Another feature that helps developer in debugging. Let&#8217;s say you have 30 elements with the same font color of blue. Then in the middle of your work you decided to change it to red. Of course in regular css you&#8217;ll have to do it one by one. But in SASS there is this thing called variables. Like what I did in my example, I stored the color #ff0000 in a variable called $paragraphColor. So with the help of variables, you&#8217;ll no longer have to change a property of an element one by one. All you have to do is change the value of the variable and you&#8217;re done.</p>
 
