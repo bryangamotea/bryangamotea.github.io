@@ -4,7 +4,7 @@
   <title><![CDATA[Bryan Gamotea's Personal Blog]]></title>
   <link href="http://bryangamotea.github.io/atom.xml" rel="self"/>
   <link href="http://bryangamotea.github.io/"/>
-  <updated>2014-01-16T10:00:30+08:00</updated>
+  <updated>2014-01-27T09:14:12+08:00</updated>
   <id>http://bryangamotea.github.io/</id>
   <author>
     <name><![CDATA[Bryan Gamotea]]></name>
@@ -12,6 +12,30 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Ruby]]></title>
+    <link href="http://bryangamotea.github.io/blog/2014/01/24/ruby/"/>
+    <updated>2014-01-24T10:38:28+08:00</updated>
+    <id>http://bryangamotea.github.io/blog/2014/01/24/ruby</id>
+    <content type="html"><![CDATA[<body>
+	<p>
+		I took Ruby lessons in codeacademy last week. Some functions are the same with JavaScript and some are not like variable declaration, the &#8220;unless&#8221; statement, and many more.
+	</p>
+	<h4>This is how you declare a variable in JavaScript:</h4>
+	<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>var my_num = 25;
+</span><span class='line'>	var my_string = 'Bryan';</span></code></pre></td></tr></table></div></figure>
+
+	<h4>This is how it&#8217;s done in Ruby:</h4>
+	<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>my_num = 25
+</span><span class='line'>	my_string = 'Bryan'</span></code></pre></td></tr></table></div></figure>
+</body>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[SASS: Syntactically Awesome Stylesheet]]></title>
