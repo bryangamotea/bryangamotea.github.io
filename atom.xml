@@ -4,7 +4,7 @@
   <title><![CDATA[Bryan Gamotea's Personal Blog]]></title>
   <link href="http://bryangamotea.github.io/atom.xml" rel="self"/>
   <link href="http://bryangamotea.github.io/"/>
-  <updated>2014-01-27T13:39:33+08:00</updated>
+  <updated>2014-01-27T14:45:41+08:00</updated>
   <id>http://bryangamotea.github.io/</id>
   <author>
     <name><![CDATA[Bryan Gamotea]]></name>
@@ -12,6 +12,108 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[PHP:Personal Homepage]]></title>
+    <link href="http://bryangamotea.github.io/blog/2014/01/27/php-personal-homepage/"/>
+    <updated>2014-01-27T14:03:35+08:00</updated>
+    <id>http://bryangamotea.github.io/blog/2014/01/27/php-personal-homepage</id>
+    <content type="html"><![CDATA[<body>
+	<h3>PHP and JavaScript</h3>
+	<p>I&#8217;ve been using JavaScript a lot for the past month and I just finished another course in codeacademy which is PHP and I think it&#8217;s a good idea to compare the two languages.</p>
+
+	<p>Most PHP commands and functions are nearly the same with JavaScript like the <em>if/else</em> statement <em>switch</em> statement, creating <em>classes</em> and <em>functions</em>, etc. But there are things that you can do in PHP that you can&#8217;t do in JavaScritp and there are things that you can do in JS that you can&#8217;t do in PHP. PHP is often used to access data in the database. It is used as a backend language while JS is often used in the frontend side.</p>
+
+	<h3>Code comparison</h3>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$my_string = "one";
+</span><span class='line'>$my_number = 24;</span></code></pre></td></tr></table></div></figure>
+	<p>This is how you declared a variable in PHP, while in JS you can do it like this:</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>var my_string = "one";
+</span><span class='line'>var my_number = 24;</span></code></pre></td></tr></table></div></figure>
+
+	<p>&#8221;$&#8221; in PHP is the same as &#8220;var&#8221; in JS. It tells the interpreter that it&#8217;s a variable</p>
+
+	<h4>Switch statement</h4>
+	<p>Switch stament in PHP is done exactly the same way as you do it in JS, the only thing here is in PHP, there are two ways two write a switch statement.</p>
+
+	<p>this is the conventional way to write switch statement</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$num = 3;
+</span><span class='line'>
+</span><span class='line'>switch($num) {
+</span><span class='line'>	case 1:
+</span><span class='line'>		echo "one";
+</span><span class='line'>		break;
+</span><span class='line'>	case 2:
+</span><span class='line'>		echo "two";
+</span><span class='line'>		break;
+</span><span class='line'>	case 3:
+</span><span class='line'>		echo "three";
+</span><span class='line'>		break;
+</span><span class='line'>	default:
+</span><span class='line'>		echo "four";
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+	<p>and the other way is using &#8216;endswitch&#8217; or alternative systax.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>switch($num):
+</span><span class='line'>	case 1:
+</span><span class='line'>		echo "one";
+</span><span class='line'>		break;
+</span><span class='line'>	case 2:
+</span><span class='line'>		echo "two";
+</span><span class='line'>		break;
+</span><span class='line'>	case 3:
+</span><span class='line'>		echo "three";
+</span><span class='line'>		break;
+</span><span class='line'>	default:
+</span><span class='line'>		echo "four";
+</span><span class='line'>endswitch;</span></code></pre></td></tr></table></div></figure>
+
+	<h4>Classes</h4>
+	<p>You can also create Classes and Objects in PHP. The major difference here between PHP and JS is the way how you access properties. You can access properties of Classes in JS by means of <strong>dot notation</strong> while in PHP you can do it like this:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$objName = new className(params);
+</span><span class='line'>
+</span><span class='line'>$objName->propertyname;
+</span><span class='line'>$objName->method();</span></code></pre></td></tr></table></div></figure>
+</body>]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Ruby]]></title>
@@ -58,9 +160,7 @@
 <span class='line-number'>6</span>
 <span class='line-number'>7</span>
 <span class='line-number'>8</span>
-<span class='line-number'>9</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>.container {
-</span><span class='line'>
 </span><span class='line'>	.content {
 </span><span class='line'>		height:200px;
 </span><span class='line'>		width:200px;
