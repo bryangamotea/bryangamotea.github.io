@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>SASS: Syntactically Awesome Stylesheet - Bryan Gamotea's Personal Blog</title>
+  <title>CSS3 Animations - Bryan Gamotea's Personal Blog</title>
   <meta name="author" content="Bryan Gamotea">
 
   
-  <meta name="description" content="SASS is a css extension that makes writing CSS fun. Not just fun but it makes you work a little bit easier. This is because it has features that &hellip;">
+  <meta name="description" content="I&#8217;ve been reading some articles about CSS3 animations for the past few days and I have used two animations so far. First is the rotate() &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://bryangamotea.github.io/blog/2014/01/16/sass-syntactically-awesome-stylesheet">
+  <link rel="canonical" href="http://bryangamotea.github.io/blog/2014/04/08/first-project">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Bryan Gamotea's Personal Blog" type="application/atom+xml">
@@ -68,7 +68,7 @@
   
   <header>
     
-      <h1 class="entry-title">SASS: Syntactically Awesome Stylesheet</h1>
+      <h1 class="entry-title">CSS3 Animations</h1>
     
     
       <p class="meta">
@@ -84,7 +84,7 @@
   
 
 
-<time datetime="2014-01-16T09:20:11+08:00" pubdate data-updated="true">Jan 16<span>th</span>, 2014</time>
+<time datetime="2014-04-08T08:46:10+08:00" pubdate data-updated="true">Apr 8<span>th</span>, 2014</time>
         
       </p>
     
@@ -93,51 +93,32 @@
 
 <div class="entry-content"><body>
 	<p>
-		SASS is a css extension that makes writing CSS fun. Not just fun but it makes you work a little bit easier. This is because it has features that lessen the works of the developer. These are the &#8216;magics&#8217; that SASS do:
+		I&#8217;ve been reading some articles about CSS3 animations for the past few days and I have used two animations so far. First is the <code>rotate()</code> function and the other one is the <code>scale()</code> function.
 	</p>
 
-	<h4>Nesting Rule</h4>
-	<p>In a regular CSS, you can&#8217;t nest your codes. If you do, there will surely be an error in your code. But in SASS, nesting is allowed. Here&#8217;s an example of SASS nesting rule:</p>
+	<p>
+		The first thing I do when creating a CSS animation is declare the <code>keyframes</code>
+	</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>@-webkit-keyframes spin { 100% { -webkit-transform: rotate(0deg); } }	
+</span><span class='line'>@keyframes spin { 100% { -webkit-transform: rotate(0deg); transform:rotate(0deg); } }</span></code></pre></td></tr></table></div></figure>
+	<p>
+		Keyframes for me are like functions. The name of the keyframe above is <strong>spin</strong>, which I used in my <code>rotate()</code> animation below.
+	</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>.container {
-</span><span class='line'>	.content {
-</span><span class='line'>		height:200px;
-</span><span class='line'>		width:200px;
-</span><span class='line'>		background-color:black;
-</span><span class='line'>	}
-</span><span class='line'>
-</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>-webkit-transform: rotate(-111deg);
+</span><span class='line'>-webkit-animation: spin 1s linear;
+</span><span class='line'>-webkit-animation-fill-mode:forwards;
+</span><span class='line'>-webkit-transform-origin:0% 100%;</span></code></pre></td></tr></table></div></figure>
 
-<p>and this is how you do it in regular css.</p>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>.container .content{
-</span><span class='line'>	height:200px;
-</span><span class='line'>	width:200px;
-</span><span class='line'>	background-color:black;
-</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
-
-	<p>What I like about nesting is you can see that this particular element is a descendant of this element. Looking at the example, you can edit the properties of .container and .content at the same time because they are at the same block of codes unlike in regular CSS.</p>
-
-	<h4>Variables</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$margin: 0 auto;
-</span><span class='line'>$paragraphColor: #ff0000;</span></code></pre></td></tr></table></div></figure>
-
-	<p>Another feature that helps developer in debugging. Let&#8217;s say you have 30 elements with the same font color of blue. Then in the middle of your work you decided to change it to red. Of course in regular css you&#8217;ll have to do it one by one. But in SASS there is this thing called variables. Like what I did in my example, I stored the color #ff0000 in a variable called $paragraphColor. So with the help of variables, you&#8217;ll no longer have to change a property of an element one by one. All you have to do is change the value of the variable and you&#8217;re done.</p>
-
+	<p>
+		Note: This animation only works for Chrome browsers.
+	</p>
 </body></div>
 
 
@@ -160,7 +141,7 @@
   
 
 
-<time datetime="2014-01-16T09:20:11+08:00" pubdate data-updated="true">Jan 16<span>th</span>, 2014</time>
+<time datetime="2014-04-08T08:46:10+08:00" pubdate data-updated="true">Apr 8<span>th</span>, 2014</time>
       
 
 
@@ -168,7 +149,7 @@
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://bryangamotea.github.io/blog/2014/01/16/sass-syntactically-awesome-stylesheet/" data-via="" data-counturl="http://bryangamotea.github.io/blog/2014/01/16/sass-syntactically-awesome-stylesheet/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://bryangamotea.github.io/blog/2014/04/08/first-project/" data-via="" data-counturl="http://bryangamotea.github.io/blog/2014/04/08/first-project/" >Tweet</a>
   
   
   
@@ -177,10 +158,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2014/01/15/python/" title="Previous Post: Python">&laquo; Python</a>
+        <a class="basic-alignment left" href="/blog/2014/01/27/php-personal-homepage/" title="Previous Post: PHP:Personal Homepage">&laquo; PHP:Personal Homepage</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2014/01/24/ruby/" title="Next Post: Ruby">Ruby &raquo;</a>
       
     </p>
   </footer>

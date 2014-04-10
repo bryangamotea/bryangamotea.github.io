@@ -4,7 +4,7 @@
   <title><![CDATA[Bryan Gamotea's Personal Blog]]></title>
   <link href="http://bryangamotea.github.io/atom.xml" rel="self"/>
   <link href="http://bryangamotea.github.io/"/>
-  <updated>2014-01-27T14:45:41+08:00</updated>
+  <updated>2014-04-10T09:02:53+08:00</updated>
   <id>http://bryangamotea.github.io/</id>
   <author>
     <name><![CDATA[Bryan Gamotea]]></name>
@@ -12,6 +12,42 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[CSS3 Animations]]></title>
+    <link href="http://bryangamotea.github.io/blog/2014/04/08/first-project/"/>
+    <updated>2014-04-08T08:46:10+08:00</updated>
+    <id>http://bryangamotea.github.io/blog/2014/04/08/first-project</id>
+    <content type="html"><![CDATA[<body>
+	<p>
+		I&#8217;ve been reading some articles about CSS3 animations for the past few days and I have used two animations so far. First is the <code>rotate()</code> function and the other one is the <code>scale()</code> function.
+	</p>
+
+	<p>
+		The first thing I do when creating a CSS animation is declare the <code>keyframes</code>
+	</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>@-webkit-keyframes spin { 100% { -webkit-transform: rotate(0deg); } }	
+</span><span class='line'>@keyframes spin { 100% { -webkit-transform: rotate(0deg); transform:rotate(0deg); } }</span></code></pre></td></tr></table></div></figure>
+	<p>
+		Keyframes for me are like functions. The name of the keyframe above is <strong>spin</strong>, which I used in my <code>rotate()</code> animation below.
+	</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>-webkit-transform: rotate(-111deg);
+</span><span class='line'>-webkit-animation: spin 1s linear;
+</span><span class='line'>-webkit-animation-fill-mode:forwards;
+</span><span class='line'>-webkit-transform-origin:0% 100%;</span></code></pre></td></tr></table></div></figure>
+
+	<p>
+		Note: This animation only works for Chrome browsers.
+	</p>
+</body>]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[PHP:Personal Homepage]]></title>

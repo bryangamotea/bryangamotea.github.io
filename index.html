@@ -9,7 +9,7 @@
   <meta name="author" content="Bryan Gamotea">
 
   
-  <meta name="description" content="PHP and JavaScript I&#8217;ve been using JavaScript a lot for the past month and I just finished another course in codeacademy which is PHP and I &hellip;">
+  <meta name="description" content="I&#8217;ve been reading some articles about CSS3 animations for the past few days and I have used two animations so far. First is the rotate() &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -65,6 +65,69 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/04/08/first-project/">CSS3 Animations</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-08T08:46:10+08:00" pubdate data-updated="true">Apr 8<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><body>
+	<p>
+		I&#8217;ve been reading some articles about CSS3 animations for the past few days and I have used two animations so far. First is the <code>rotate()</code> function and the other one is the <code>scale()</code> function.
+	</p>
+
+	<p>
+		The first thing I do when creating a CSS animation is declare the <code>keyframes</code>
+	</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>@-webkit-keyframes spin { 100% { -webkit-transform: rotate(0deg); } }	
+</span><span class='line'>@keyframes spin { 100% { -webkit-transform: rotate(0deg); transform:rotate(0deg); } }</span></code></pre></td></tr></table></div></figure>
+	<p>
+		Keyframes for me are like functions. The name of the keyframe above is <strong>spin</strong>, which I used in my <code>rotate()</code> animation below.
+	</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>-webkit-transform: rotate(-111deg);
+</span><span class='line'>-webkit-animation: spin 1s linear;
+</span><span class='line'>-webkit-animation-fill-mode:forwards;
+</span><span class='line'>-webkit-transform-origin:0% 100%;</span></code></pre></td></tr></table></div></figure>
+
+	<p>
+		Note: This animation only works for Chrome browsers.
+	</p>
+</body></div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -557,6 +620,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/04/08/first-project/">CSS3 Animations</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/01/27/php-personal-homepage/">PHP:Personal Homepage</a>
       </li>
     
@@ -570,10 +637,6 @@
     
       <li class="post">
         <a href="/blog/2014/01/15/python/">Python</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/01/12/compass/">Compass</a>
       </li>
     
   </ul>
